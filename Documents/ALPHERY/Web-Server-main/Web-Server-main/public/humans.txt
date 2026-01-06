@@ -1,0 +1,18 @@
+/* TEAM */
+  Company: Alphery
+  Site: https://www.alphery.com
+  Twitter: @alphery
+  Location: India
+
+/* SITE */
+  Last update: 2024/12/24
+  Language: English
+  Standards: HTML5, CSS3, JavaScript ES6+
+  Components: React, Vite
+  IDE: Visual Studio Code
+
+/* THANKS */
+  Built with passion and cutting-edge technology.
+  Powered by AI and human creativity.
+
+  We believe in building the future, one line of code at a time.
