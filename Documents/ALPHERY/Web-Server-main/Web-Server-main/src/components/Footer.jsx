@@ -6,7 +6,7 @@ const Footer = ({ theme, showQuboAI }) => {
   if (showQuboAI) return null;
 
   return (
-    <footer className='bg-[#000000] dark:bg-black text-white py-12 px-4 sm:px-12 lg:px-24 overflow-hidden relative'>
+    <footer className='bg-[#000000] dark:bg-black text-white py-12 px-4 sm:px-12 lg:px-24 2xl:px-24 overflow-hidden relative'>
 
       {/* Top Section: Slogan & CTA */}
       <div className='flex flex-col lg:flex-row justify-between items-start lg:items-end gap-12 mb-20'>

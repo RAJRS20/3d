@@ -77,7 +77,7 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
         transition-all duration-300
         ${isScrolled ? 'bg-white dark:bg-gray-900 shadow-md' : ''}
       `}>
-        <div className="w-full mx-auto px-6 sm:px-12 md:px-12 lg:px-16 xl:px-24">
+        <div className="max-w-7xl 2xl:max-w-[1872px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-24">
           <div className="flex justify-between items-center h-20">
 
             {/* Logo */}

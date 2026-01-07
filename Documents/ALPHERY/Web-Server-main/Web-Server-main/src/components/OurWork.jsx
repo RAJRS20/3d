@@ -32,7 +32,7 @@ const OurWork = ({ setShowOurProjects }) => {
         <section id='our-work' className='py-24 bg-white dark:bg-black overflow-hidden'>
 
             {/* Header */}
-            <div className='flex justify-between items-end mb-12 px-4 sm:px-12 lg:px-24 xl:px-40'>
+            <div className='flex justify-between items-end mb-12 px-4 sm:px-12 lg:px-24 2xl:px-24'>
                 <h2 className='text-2xl sm:text-4xl md:text-5xl text-black dark:text-white font-medium tracking-tight'>
                     Selected Works
                 </h2>
@@ -59,8 +59,8 @@ const OurWork = ({ setShowOurProjects }) => {
                         className={`
                             min-w-[85vw] sm:min-w-[45vw] lg:min-w-[30vw] 
                             snap-center flex flex-col gap-4 cursor-pointer group
-                            ${index === 0 ? 'ml-4 sm:ml-12 lg:ml-24 xl:ml-40' : ''}
-                            ${index === workData.length - 1 ? 'mr-4 sm:mr-12 lg:mr-24 xl:mr-40' : ''}
+                            ${index === 0 ? 'ml-4 sm:ml-12 lg:ml-24 2xl:ml-24' : ''}
+                            ${index === workData.length - 1 ? 'mr-4 sm:mr-12 lg:mr-24 2xl:mr-24' : ''}
                         `}
                         onClick={() => setSelectedProject(work)}
                     >

@@ -5,7 +5,7 @@ import assets from '../assets/assets'
 const WhoWeAre = () => {
     return (
         <section id='who-we-are' className='py-24 bg-white dark:bg-black text-gray-900 dark:text-white'>
-            <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+            <div className='max-w-7xl 2xl:max-w-[1872px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-24'>
 
                 {/* Top Section: Heading & Description */}
                 <div className='flex flex-col lg:flex-row justify-between items-start mb-8 lg:gap-20'>

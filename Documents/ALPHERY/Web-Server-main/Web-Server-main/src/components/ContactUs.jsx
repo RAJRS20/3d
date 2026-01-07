@@ -27,7 +27,7 @@ const ContactUs = () => {
   }
 
   return (
-    <section id='contact-us' className='bg-white dark:bg-black text-black dark:text-white py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden relative'>
+    <section id='contact-us' className='bg-white dark:bg-black text-black dark:text-white py-20 max-w-7xl 2xl:max-w-[1872px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-24 overflow-hidden relative'>
 
       {/* Giant Title */}
       <motion.h1
