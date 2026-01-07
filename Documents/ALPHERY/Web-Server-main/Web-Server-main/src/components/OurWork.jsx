@@ -138,7 +138,9 @@ const OurWork = ({ setShowOurProjects }) => {
                                 <div className="flex gap-2 mb-6">
                                     {selectedProject.tags.map(tag => <span key={tag} className="border border-gray-200 dark:border-gray-700 px-3 py-1 rounded-full text-sm dark:text-gray-300">{tag}</span>)}
                                 </div>
-                                <a href={selectedProject.url} target="_blank" className="inline-block bg-black dark:bg-white text-white dark:text-black px-10 py-4 rounded-full font-bold uppercase tracking-wider">Visit Site</a>
+                                <div className="flex justify-end">
+                                    <a href={selectedProject.url} target="_blank" className="inline-block bg-black dark:bg-white text-white dark:text-black px-10 py-4 rounded-full font-bold uppercase tracking-wider">Visit Site</a>
+                                </div>
                             </div>
                         </motion.div>
                     </motion.div>

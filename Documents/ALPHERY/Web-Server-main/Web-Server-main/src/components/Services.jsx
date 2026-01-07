@@ -30,7 +30,7 @@ const Services = () => {
   ]
 
   return (
-    <section id='services' className='relative py-24 overflow-hidden border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-black'>
+    <section id='services' className='relative py-24 overflow-hidden bg-white dark:bg-black'>
 
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex flex-col lg:flex-row'>

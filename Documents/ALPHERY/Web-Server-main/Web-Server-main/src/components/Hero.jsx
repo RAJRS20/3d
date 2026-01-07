@@ -28,12 +28,10 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className='text-2xl sm:text-4xl md:text-3xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6 md:mb-8 text-gray-900 dark:text-white text-left'
         >
-          Turning imagination <br />
-          into{' '}
-          <span className='bg-clip-text text-transparent bg-[linear-gradient(to_right,#5044E5,#4d8cea,#8A84FF,#4d8cea,#5044E5)] bg-[length:400%_auto] animate-shimmer'>
+          <span className="whitespace-nowrap">Turning imagination</span><br />
+          <span className="whitespace-nowrap">into <span className='bg-clip-text text-transparent bg-[linear-gradient(to_right,#5044E5,#4d8cea,#8A84FF,#4d8cea,#5044E5)] bg-[length:400%_auto] animate-shimmer'>
             digital
-          </span>{' '}
-          impact.
+          </span> impact.</span>
         </motion.h1>
 
         <motion.p
