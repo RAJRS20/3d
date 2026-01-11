@@ -82,7 +82,10 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
 
             {/* Logo */}
             {/* Logo - Floating Island */}
-            <div
+            <motion.div
+              initial={{ x: '40vw', opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, ease: 'easeOut' }}
               className="flex-shrink-0 flex items-center justify-center cursor-pointer h-20 w-20"
               onClick={() => handleNavigation('hero')}
             >
@@ -91,11 +94,16 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
                 className="w-auto h-16 transition-all duration-300"
                 alt='Logo'
               />
-            </div>
+            </motion.div>
 
             {/* Desktop Navigation Links */}
             {/* Desktop Navigation Links - Floating Pill */}
-            <div className={`hidden lg:flex items-center transition-all duration-300 ${isScrolled ? 'bg-transparent border-none shadow-none' : 'bg-gray-100/50 dark:bg-gray-800/50 backdrop-blur-md'} rounded-full px-2 py-2`}>
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+              className={`hidden lg:flex items-center transition-all duration-300 ${isScrolled ? 'bg-transparent border-none shadow-none' : 'bg-gray-100/50 dark:bg-gray-800/50 backdrop-blur-md'} rounded-full px-2 py-2`}
+            >
               {[
                 { id: 'who-we-are', label: 'About Us', page: 'who-we-are' },
                 { id: 'services', label: 'Our Services', page: 'services' },
@@ -115,7 +123,7 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
                   {item.label}
                 </a>
               ))}
-            </div>
+            </motion.div>
 
             {/* Right Section - Theme Toggle & CTA */}
             <div className='flex items-center gap-4'>
@@ -124,12 +132,15 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
 
 
               {/* Premium CTA Button - Desktop */}
-              <button
+              <motion.button
+                initial={{ x: '-40vw', opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: 'easeOut' }}
                 onClick={() => handleNavigation('contact-us')}
                 className={`
                   hidden lg:flex items-center gap-2 
-                  px-10 py-4 rounded-full
-                  font-bold uppercase tracking-wider
+                  px-6 py-2 rounded-full
+                  text-sm font-bold uppercase tracking-wider
                   transition-all duration-200
                   shadow-lg hover:shadow-xl hover:scale-105 active:scale-95
                   ${showQuboAI
@@ -140,7 +151,7 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
               >
                 CONNECT
 
-              </button>
+              </motion.button>
 
               {/* Mobile Menu Button */}
               <button
@@ -160,10 +171,10 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
             </div>
           </div>
         </div>
-      </nav>
+      </nav >
 
       {/* Mobile Sidebar */}
-      <AnimatePresence>
+      < AnimatePresence >
         {sidebarOpen && (
           <>
             {/* Backdrop */}
@@ -240,11 +251,12 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
               </div>
             </motion.div>
           </>
-        )}
-      </AnimatePresence>
+        )
+        }
+      </AnimatePresence >
 
       {/* Popup Container */}
-      <AnimatePresence>
+      < AnimatePresence >
         {popupOpen && (
           <div
             className='fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm'
@@ -327,7 +339,7 @@ const Navbar = ({ theme, setTheme, setShowProducts, setShowContact, setShowToolS
             </motion.div>
           </div>
         )}
-      </AnimatePresence>
+      </AnimatePresence >
     </>
   )
 }
